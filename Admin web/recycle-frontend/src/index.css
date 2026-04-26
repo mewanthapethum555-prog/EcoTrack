@@ -1,0 +1,259 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Eco Track Admin Panel Design System - All colors MUST be HSL */
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 120 15% 97%;
+    --foreground: 156 24% 12%;
+
+    /* Card system */
+    --card: 0 0% 100%;
+    --card-foreground: 156 24% 12%;
+
+    /* Popover system */
+    --popover: 0 0% 100%;
+    --popover-foreground: 156 24% 12%;
+
+    /* Primary - Forest Green ecosystem */
+    --primary: 120 73% 33%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 120 45% 45%;
+    --primary-dark: 120 85% 25%;
+
+    /* Secondary - Earth tones */
+    --secondary: 30 35% 85%;
+    --secondary-foreground: 30 25% 15%;
+
+    /* Muted system */
+    --muted: 120 10% 95%;
+    --muted-foreground: 156 12% 45%;
+
+    /* Accent - Bright green for success */
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 98%;
+
+    /* Eco-friendly color palette */
+    --forest: 140 80% 25%;
+    --forest-light: 140 60% 40%;
+    --ocean: 200 75% 45%;
+    --ocean-light: 200 60% 65%;
+    --earth: 25 45% 35%;
+    --earth-light: 25 35% 55%;
+    --sage: 85 25% 60%;
+    --sage-light: 85 20% 75%;
+    --sunset: 35 85% 55%;
+    --sunset-light: 35 70% 70%;
+
+    /* Status colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+    --warning: 45 93% 47%;
+    --warning-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Interactive elements */
+    --border: 120 15% 88%;
+    --input: 120 15% 88%;
+    --ring: 120 73% 33%;
+
+    /* Eco-themed gradients */
+    --gradient-eco: linear-gradient(135deg, hsl(var(--forest)) 0%, hsl(var(--accent)) 100%);
+    --gradient-earth: linear-gradient(180deg, hsl(var(--earth-light)) 0%, hsl(var(--sage-light)) 100%);
+    --gradient-forest: linear-gradient(45deg, hsl(var(--forest)) 0%, hsl(var(--forest-light)) 100%);
+    --gradient-ocean: linear-gradient(135deg, hsl(var(--ocean)) 0%, hsl(var(--ocean-light)) 100%);
+    --gradient-nature: linear-gradient(180deg, hsl(var(--sage)) 0%, hsl(var(--earth-light)) 50%, hsl(var(--forest-light)) 100%);
+    --gradient-sunrise: linear-gradient(90deg, hsl(var(--sunset-light)) 0%, hsl(var(--accent)) 100%);
+
+    /* Shadows with eco-theme */
+    --shadow-eco: 0 4px 20px -2px hsl(120 73% 33% / 0.15);
+    --shadow-card: 0 2px 10px -2px hsl(120 10% 10% / 0.1);
+    --shadow-elevated: 0 8px 30px -4px hsl(120 73% 33% / 0.2);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 140 80% 15%; /* Darker green */
+    --sidebar-foreground: 0 0% 100%;   /* White for icons/text */
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --header-background: 140 80% 25%;  /* Green for header */
+
+    /* Light green card for Recent activities, Quick actions, submission queue, pickup schedule, current routes, users, regional performance */
+    --card-light: 140 55% 92%; /* very light green */
+    --card-light-border: 140 45% 82%;
+  }
+
+  .dark {
+    /* Dark mode - Deep forest theme */
+    --background: 156 24% 8%;
+    --foreground: 120 10% 95%;
+
+    --card: 156 20% 10%;
+    --card-foreground: 120 10% 95%;
+
+    --popover: 156 20% 10%;
+    --popover-foreground: 120 10% 95%;
+
+    --primary: 142 76% 36%;
+    --primary-foreground: 156 24% 8%;
+    --primary-light: 142 65% 45%;
+    --primary-dark: 142 85% 28%;
+
+    --secondary: 156 15% 15%;
+    --secondary-foreground: 120 10% 95%;
+
+    --muted: 156 12% 14%;
+    --muted-foreground: 120 8% 65%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 156 24% 8%;
+
+    --success: 142 76% 36%;
+    --warning: 45 93% 47%;
+    --destructive: 0 84% 60%;
+
+    --border: 156 15% 18%;
+    --input: 156 15% 18%;
+    --ring: 142 76% 36%;
+
+    /* Dark mode gradients */
+    --gradient-eco: linear-gradient(135deg, hsl(142 76% 36%) 0%, hsl(120 45% 45%) 100%);
+    --gradient-earth: linear-gradient(180deg, hsl(131, 93%, 30%) 0%, hsl(156 12% 14%) 100%);
+    --gradient-forest: linear-gradient(45deg, hsl(128, 86%, 17%) 0%, hsl(142, 87%, 21%) 100%);
+
+    --shadow-eco: 0 4px 20px -2px hsl(142 76% 36% / 0.25);
+    --shadow-card: 0 2px 10px -2px hsl(0 0% 0% / 0.3);
+    --shadow-elevated: 0 8px 30px -4px hsl(142 76% 36% / 0.3);
+    --sidebar-background: 140 80% 15%; /* Darker green for dark mode */
+    --sidebar-foreground: 0 0% 100%;   /* White for icons/text */
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --header-background: 140 80% 25%;  /* Green for header */
+
+    /* Slightly darker light card in dark mode for contrast */
+    --card-light: 140 40% 14%;
+    --card-light-border: 140 35% 12%;
+  }
+}
+
+/* New component utilities */
+@layer components {
+  .card-light {
+    background-color: hsl(var(--card-light));
+    border: 1px solid hsl(var(--card-light-border));
+    color: inherit;
+    border-radius: var(--radius);
+  }
+
+  /* Simple dropdown for search results under the header search input */
+  .search-results {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    right: 0;
+    z-index: 50;
+    max-height: 18rem;
+    overflow: auto;
+    box-shadow: var(--shadow-card);
+    border-radius: 0.5rem;
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+  }
+
+  .search-results .item {
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+  }
+
+  .search-results .item:hover {
+    background: hsl(var(--muted));
+  }
+
+  /* Truck animation styles */
+  .truck-container {
+    position: relative;
+    width: 60px;
+    height: 48px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .truck-container {
+      width: 40px;
+      height: 32px;
+    }
+  }
+
+  .truck-animation {
+    background: transparent !important;
+    mix-blend-mode: multiply;
+    filter: 
+      brightness(1.1) 
+      contrast(1.2) 
+      drop-shadow(0 0 8px rgba(0, 0, 0, 0.3))
+      hue-rotate(10deg)
+      saturate(1.1);
+    animation: truckMove 4s ease-in-out infinite;
+    transform-origin: center;
+  }
+
+  @keyframes truckMove {
+    0% {
+      transform: translateX(-10px);
+    }
+    25% {
+      transform: translateX(5px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    75% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(-10px);
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Admin requirement: hide Leaflet attribution (bottom-left flag/copyright) */
+.leaflet-container .leaflet-control-attribution,
+.leaflet-container .leaflet-attribution-flag {
+  display: none !important;
+}
