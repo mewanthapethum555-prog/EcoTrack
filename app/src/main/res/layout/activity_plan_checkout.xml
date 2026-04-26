@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dashboard"
+    tools:context=".PlanCheckoutActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_checkout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Checkout"
+            app:titleTextColor="@color/black"
+            app:navigationIcon="?attr/homeAsUpIndicator" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:clipToPadding="false"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_plan_label_checkout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plan"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/tv_amount_checkout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LKR - - days"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm your details"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <CheckBox
+                android:id="@+id/cbUseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use saved name"
+                android:textColor="@color/black"
+                android:buttonTint="@color/primaryColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/etFirstName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="First name"
+                    android:inputType="textPersonName"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_checkout_input"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey_600" />
+                    />
+
+                <EditText
+                    android:id="@+id/etLastName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Last name"
+                    android:inputType="textPersonName"
+                    android:padding="12dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/bg_checkout_input"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey_600" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_600"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp" />
+
+            <CheckBox
+                android:id="@+id/cbUseEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use saved email"
+                android:textColor="@color/black"
+                android:buttonTint="@color/primaryColor" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:background="@drawable/bg_checkout_input"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey_600"
+                android:layout_marginTop="10dp" />
+
+            <CheckBox
+                android:id="@+id/cbUsePhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use saved phone"
+                android:layout_marginTop="14dp"
+                android:textColor="@color/black"
+                android:buttonTint="@color/primaryColor" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:padding="12dp"
+                android:background="@drawable/bg_checkout_input"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey_600"
+                android:layout_marginTop="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_600"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp" />
+
+            <CheckBox
+                android:id="@+id/cbUseAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use saved address"
+                android:textColor="@color/black"
+                android:buttonTint="@color/primaryColor" />
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:inputType="textPostalAddress"
+                android:padding="12dp"
+                android:background="@drawable/bg_checkout_input"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey_600"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/etCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City"
+                android:inputType="text"
+                android:padding="12dp"
+                android:background="@drawable/bg_checkout_input"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey_600"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/btnConfirmDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm Details"
+                android:layout_marginTop="18dp"
+                android:background="#66BB6A"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

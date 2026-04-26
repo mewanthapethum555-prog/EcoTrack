@@ -1,0 +1,183 @@
+<resources>
+    <string name="app_name">Eco Track</string>
+    <string name="back">Back</string>
+    <string name="title_choose_role">Choose Your Role</string>
+    <string name="subtitle_choose_role">Select how you want to participate in Eco Track</string>
+    <string name="role_driver">Driver</string>
+    <string name="desc_driver">Pick up recyclable items and manage collections.</string>
+    <string name="role_recycler">Recycler</string>
+    <string name="desc_recycler">Submit recyclable items, track pickups, earn rewards.</string>
+    <string name="title_driver_login">Driver Login</string>
+    <string name="title_recycler_login">Recycler Login</string>
+    <string name="title_recycler_register">Recycler Registration</string>
+    <string name="access_driver_portal">Access your Driver Portal</string>
+    <string name="access_recycler_portal">Access your Recycler Portal</string>
+    <string name="join_eco_track">Join Eco Track and start Recycling</string>
+    <string name="email_label">Email Address</string>
+    <string name="password_label">Password</string>
+    <string name="name_label">Full Name</string>
+    <string name="login_btn">Login</string>
+    <string name="register_btn">Register</string>
+    <string name="no_account">Don\'t have an account? Register</string>
+    <string name="have_account">Already have an account? Login</string>
+    <string name="confirm_password_label">Confirm Password</string>
+    <string name="phone_label">Phone Number</string>
+    <string name="address_optional_label">Address (Optional)</string>
+    <string name="postal_code_label">Postal Code</string>
+    
+    <!-- Dashboard Strings -->
+    <string name="nav_title_driver">Driver Portal</string>
+    <string name="dash_welcome">Welcome back, Kasun</string>
+    <string name="dash_truck_info">Truck • Route A - Downtown</string>
+    <string name="dash_live_tracking">Live tracking</string>
+    <string name="dash_compliance">Compliance ready</string>
+    <string name="dash_eco_mission">Eco mission</string>
+    
+    <string name="dash_lkr_val">LKR 0.00</string>
+    <string name="dash_lkr_label">Today\'s Earnings</string>
+    <string name="dash_collections_val">0</string>
+    <string name="dash_collections_label">Collections</string>
+    <string name="dash_items_val">0.0</string>
+    <string name="dash_items_label">Items Collected (kg)</string>
+    <string name="dash_route_label">Route Progress</string>
+    
+    <string name="dash_quick_actions">Quick Actions</string>
+    <string name="dash_action_update">Update Location</string>
+    <string name="dash_action_manage">Manage Pickups</string>
+    
+    <string name="dash_nav_title">Navigation</string>
+    
+    <string name="dash_schedule_title">Today\'s Schedule</string>
+    <string name="dash_schedule_empty_title">No pickups scheduled for today</string>
+    <string name="dash_schedule_empty_desc">Check back later or view all pickups</string>
+    
+    <string name="dash_notif_title">Notifications</string>
+    <string name="dash_notif_new_pickup">New pickup scheduled for %1$s at %2$s.</string>
+    <string name="dash_notif_status">Pickup status: %1$s</string>
+    <string name="dash_notif_mark_read">Mark as Read</string>
+
+    <!-- Sample notification copy for static UI -->
+    <string name="dash_notif_new_pickup_sample">New pickup scheduled for ff at aa.</string>
+    <string name="dash_notif_status_completed">Pickup status: completed</string>
+    <string name="dash_notif_time_1">2025-11-10 3:21 PM</string>
+    <string name="dash_notif_time_2">2025-11-10 3:00 PM</string>
+    <string name="dash_notif_time_3">2025-11-10 2:42 PM</string>
+    
+    <!-- Bottom Nav Strings -->
+    <string name="nav_home">Home</string>
+    <string name="nav_collections">Collections</string>
+    <string name="nav_route">Route</string>
+    <string name="nav_earnings">Earnings</string>
+
+    <!-- Collections Screen -->
+    <string name="collections_search_hint">Search by address or pickup ID...</string>
+    <string name="collections_filter_all">ALL</string>
+    <string name="collections_filter_scheduled">SCHEDULED</string>
+    <string name="collections_filter_in_progress">IN PROGRESS</string>
+    <string name="collections_filter_completed">COMPLETED</string>
+    <string name="collections_filter_rejected">REJECTED</string>
+
+    <string name="collections_sample_id">6909f81373c74e27556c853d</string>
+    <string name="collections_status_completed">Completed</string>
+    <string name="collections_sample_date">2025-11-10 at 12:00 AM</string>
+    <string name="collections_sample_address">Ahangama, Galle 80650, SL, Ahangama, Galle, 80650</string>
+    <string name="collections_sample_customer">Saman Bandara</string>
+    <string name="collections_sample_phone">0769831282</string>
+    <string name="collections_sample_type">Type: Plastic Bottles (Up to 2L)</string>
+    <string name="collections_sample_items">Items: 1</string>
+    <string name="collections_sample_weight">Weight: 1.00 kg</string>
+    <string name="collections_sample_amount">Amount: 10.00</string>
+    <string name="collections_sample_reference">w2wedwed</string>
+    <string name="collections_details">Details</string>
+
+    <!-- Route / Update Location Screen -->
+    <string name="route_title">Update Location</string>
+    <string name="route_tab_update">Update Location</string>
+    <string name="route_tab_recent">Recent Locations</string>
+    <string name="route_location_status">Location Status</string>
+    <string name="route_status_active">Active</string>
+    <string name="route_last_updated">Last Updated: Just now</string>
+    <string name="route_map_placeholder">Map preview</string>
+    <string name="route_map_hint_no_location">Sri Lanka map · Use “Use GPS” to pin your position</string>
+    <string name="route_location_details">Location Details</string>
+    <string name="route_latitude">Latitude</string>
+    <string name="route_longitude">Longitude</string>
+    <string name="route_address">Address</string>
+    <string name="route_sample_lat">6.874726</string>
+    <string name="route_sample_lng">79.891661</string>
+    <string name="route_sample_address">Nugegoda</string>
+    <string name="route_quick_actions">Quick Actions</string>
+    <string name="route_use_gps">Use GPS</string>
+    <string name="route_search_address">Search Address</string>
+    <string name="route_recent_city">colombo</string>
+    <string name="route_recent_datetime">2025-11-11 15:51:31</string>
+    <string name="route_recent_coords">6.720717, 79.930982</string>
+
+    <!-- Earnings Screen -->
+    <string name="earnings_today">Today</string>
+    <string name="earnings_week">This Week</string>
+    <string name="earnings_month">This Month</string>
+    <string name="earnings_total">Total</string>
+    <string name="earnings_val_today">LKR 0.00</string>
+    <string name="earnings_val_week">LKR 0.00</string>
+    <string name="earnings_val_month">LKR 0.00</string>
+    <string name="earnings_val_total">LKR 0.00</string>
+    <string name="earnings_recent_title">Recent Earnings</string>
+    <string name="earnings_recent_time">2025-11-10 14:44:19</string>
+    <string name="earnings_recent_amount">LKR 10.00</string>
+    <string name="earnings_empty_hint">No earnings yet. Completed pickups with payouts will appear here. Ensure earnings in Firestore include your driver ID.</string>
+
+    <!-- Recycler Dashboard -->
+    <string name="recycler_nav_home">Home</string>
+    <string name="recycler_nav_learn">Learn</string>
+    <string name="recycler_nav_submit">Submit</string>
+    <string name="recycler_nav_profile">Profile</string>
+    <string name="recycler_dash_title">Eco Track</string>
+    <string name="recycler_dash_greeting">Hi, Saman Bandara</string>
+    <string name="recycler_dash_subtitle">Ready to recycle and earn rewards today.</string>
+    <string name="recycler_dash_plan_label">Plan:</string>
+    <string name="recycler_dash_plan_id">6912b3b70acd0e95e3de9c59</string>
+    <string name="recycler_dash_status_active">Active</string>
+    <string name="recycler_dash_hub_title">Your Eco Track Hub</string>
+    <string name="recycler_dash_hub_subtitle">Access all features, earn rewards, and make a bigger impact.</string>
+    <string name="recycler_dash_chip_smart">Smart insights</string>
+    <string name="recycler_dash_chip_tips">Eco tips</string>
+    <string name="recycler_dash_chip_swipe">Swipe actions</string>
+    <string name="recycler_dash_chip_payments">Secure payments</string>
+    <string name="recycler_dash_explore_title">Explore Eco Track</string>
+    <string name="recycler_tile_learn_title">Learn &amp; Grow</string>
+    <string name="recycler_tile_learn_sub">Tips, guides, and recycling insights</string>
+    <string name="recycler_tile_submit_title">Submit Materials</string>
+    <string name="recycler_tile_submit_sub">Log new recyclable drop-offs</string>
+    <string name="recycler_tile_schedule_title">Pickup Schedule</string>
+    <string name="recycler_tile_schedule_sub">View upcoming collections</string>
+    <string name="recycler_tile_track_title">Track Trucks</string>
+    <string name="recycler_tile_track_sub">Live driver locations &amp; routes</string>
+    <string name="recycler_tile_payments_title">Payments</string>
+    <string name="recycler_tile_payments_sub">Plan details, and history</string>
+    <string name="recycler_tile_profile_title">My Profile</string>
+    <string name="recycler_tile_profile_sub">Update contact and preferences</string>
+    <string name="recycler_tile_open">Open →</string>
+
+    <!-- Learn screen -->
+    <string name="learn_title">Educational Resources</string>
+    <string name="learn_header_title">Educational Resources</string>
+    <string name="learn_header_subtitle">Learn about recycling and sustainability</string>
+    <string name="learn_banner_text">Explore our curated collection of recycling guides and tips.</string>
+    <string name="learn_read_more">Read more →</string>
+    <string name="learn_tag_general">General</string>
+    <string name="learn_tag_plastic">Plastic</string>
+    <string name="learn_tag_paper">Paper</string>
+    <string name="learn_tag_metal">Metal</string>
+    <string name="learn_tag_organic">Organic</string>
+    <string name="learn_article1_title">The Complete Guide to Recycling</string>
+    <string name="learn_article1_desc">Learn the fundamentals of recycling and how to properly sort your materials for maximum environmental impact.</string>
+    <string name="learn_article2_title">Plastic Recycling: Myths and Facts</string>
+    <string name="learn_article2_desc">Debunking common misconceptions about plastic recycling and learning the truth about different plastic types.</string>
+    <string name="learn_article3_title">Paper Recycling: From Office to Ocean</string>
+    <string name="learn_article3_desc">Discover how paper recycling works and its significant environmental benefits.</string>
+    <string name="learn_article4_title">Metal Recycling: Economic and Environmental Benefits</string>
+    <string name="learn_article4_desc">Understanding metal recycling, from aluminum cans to scrap metal.</string>
+    <string name="learn_article5_title">Composting: Nature\'s Recycling</string>
+    <string name="learn_article5_desc">Learn how to turn food waste into nutrient-rich compost for your garden.</string>
+</resources>

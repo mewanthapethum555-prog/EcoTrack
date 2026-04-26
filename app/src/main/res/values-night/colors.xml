@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core brand -->
+    <color name="primaryColor">#66BB6A</color>
+    <color name="primaryLightColor">#81C784</color>
+    <color name="primaryDarkColor">#2E7D32</color>
+    <color name="secondaryColor">#FFD54F</color>
+    <color name="secondaryLightColor">#FFE082</color>
+    <color name="secondaryDarkColor">#FFB300</color>
+
+    <!-- Text/system -->
+    <color name="primaryTextColor">#FFFFFF</color>
+    <color name="secondaryTextColor">#121212</color>
+    <color name="black">#FFFFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey_200">#2A2A2A</color>
+    <color name="grey_600">#D0D0D0</color>
+
+    <!-- Payments tabs -->
+    <color name="tab_unselected_text_color">@color/grey_600</color>
+
+    <!-- Dashboard backgrounds/cards -->
+    <color name="bg_dashboard">#121212</color>
+    <color name="bg_card_welcome_start">#1E3A2D</color>
+    <color name="bg_card_welcome_end">#1A1F1B</color>
+    <color name="bg_card_earnings">#1F3B22</color>
+    <color name="bg_card_collections">#1B2F3A</color>
+    <color name="bg_card_items">#2B2336</color>
+    <color name="bg_card_progress">#3A331A</color>
+    <color name="bg_quick_actions">#1E1E1E</color>
+
+    <!-- Icon shapes -->
+    <color name="icon_bg_earnings">#2A2A2A</color>
+    <color name="icon_bg_collections">#2A2A2A</color>
+    <color name="icon_bg_items">#2A2A2A</color>
+    <color name="icon_bg_progress">#2A2A2A</color>
+
+    <!-- Icon active colors -->
+    <color name="icon_active_earnings">#66BB6A</color>
+    <color name="icon_active_collections">#64B5F6</color>
+    <color name="icon_active_items">#BA68C8</color>
+    <color name="icon_active_progress">#FFB74D</color>
+    <color name="icon_active_truck">#66BB6A</color>
+    <color name="icon_red_badge">#EF5350</color>
+</resources>
+
